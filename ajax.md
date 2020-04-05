@@ -25,7 +25,7 @@
 - ajax로 불러온 데이터는 히스토리에 남지 않기 때문에 히스토리 관리가 되지 않는다. 
 
 
-# ajax 구현
+# ajax 구현방식
 ## 1. XMLHttpRequest 객체 (javascript 사용)
 - 서버와 통신하기 위해 XMLHttpRequest객체를 사용해서 ajax를 요청하고 전송한다.  
 - xml, json, http 등 다양한 포맷을 주고받을 수 있다. 
