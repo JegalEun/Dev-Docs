@@ -291,7 +291,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 
 <hr>
-참고
+참고 <br>
 [mybatis개념] https://sjh836.tistory.com/127 <br>
 [마이바티스와 sql연동하기] https://baessi.tistory.com/8 <br>
 [마이바티스연동과 개념] https://addio3305.tistory.com/62 <br>
