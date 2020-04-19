@@ -102,7 +102,7 @@ pom.xml의 <dependencied>태그 안에 <dependencied>추가하기!
     	<version>4.3.18.RELEASE</version>
 	</dependency>
       
-	  <!--jdbc의 Datasource 사용을 위한 dbcp도 추가해준다.-->
+	<!--jdbc의 Datasource 사용을 위한 dbcp도 추가해준다.-->
       <dependency>
          <groupId>org.apache.commons</groupId>
          <artifactId>commons-dbcp2</artifactId>
@@ -123,8 +123,6 @@ pom.xml의 <dependencied>태그 안에 <dependencied>추가하기!
 
 /WEB_INF/spring/appServlet경로에 root-context.xml 파일 생성!
 
-웹과 관련이 없는 라이브러리들은 root-context.xml을 통해서 연동한다. 
-spring-jdbc 모듈을 이용하여 JDBC 커넥션을 자동으로 처리할 수 있도록  DataSource를 추가해준다. 
 ~~~
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
@@ -204,7 +202,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 **4 web.xml 작성**
 
 web.xml은 서버가 최초로 실행될 때 해당 위치에 있는 context 파일을 모조리 읽어들이는 것을 뜻한다. 
-context 파일을 읽어들이면서 xm을 인식한다. 
+context 파일을 읽어들이면서 xml을 인식한다. 
 ~~~
 <context-param>
       <param-name>contextConfigLocation</param-name>
@@ -287,8 +285,6 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 - 간단한 퍼시스턴스 프레임워크이다.
 - 코드재사용으로 인한 개발자의 부담을 줄여주고 생산성을 높인다. 
 - SQL문이 어플리케이션 소스코드로부터 완전히 분리되어 가독성이 높다.
-
-
 
 <hr>
 참고 <br>
