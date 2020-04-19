@@ -16,7 +16,7 @@ SQL 쿼리문을 xml 형식의 파일로 분리시켜 저장관리할 수 있다
 
 # Mybatis를 쓰는 이유
 ###### Mybatis가 없었을 때의 소스 방식
-~~~
+~~~java
 public Entity selectFAQList(UserConnection conn, Entity param) throws SQLException {
        UserStatement stmt = null;
        ResultSet rslt = null;
