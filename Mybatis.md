@@ -38,8 +38,6 @@ public Entity selectFAQList(UserConnection conn, Entity param) throws SQLExcepti
 또한, 쿼리 양이 많아질수록 .java에는 자바 코드뿐만 아니라 쿼리 코드로 인해 양이 방대해진다.
 그래서 sql 구문과 java 코드의 분리 필요성을 느끼게 된다. 
 
-이것이 Mybatis를 사용하는 이유이다. 
-
 ######  Mybatis적용 후 소스 방식
 ~~~
 <?xml version="1.0" encoding="UTF-8"?>
