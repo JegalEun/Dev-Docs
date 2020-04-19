@@ -216,9 +216,8 @@ context 파일을 읽어들이면서 xml을 인식한다.
 **5 DAO 작성**
 
 마지막으로 실제 소스에서 위에서 선언한 SqlSessionTemplate을 사용할 DAO를 만들어준다. 
-
-DAO는 Data Access Object의 약자로, Data Access Object를 Factory 패턴화 시키는 것이다.
-DAO는 sql 문의 id를 통해 데이터베이스와 sql 문을 연결해 주는 역할을 한다.
+스프링의 Data Access Object (DAO) 지원은 JDBC, Hibernate, JPA, JDO같은 데이터 접근 기술과 관련된 작업을 일관된 방법으로 쉽게 할 수 있게 도와준다.
+DAO는 sql 문의 id를 통해 데이터베이스와 sql 문을 연결해준다.
 
 1) src/main/java 폴더의 first > common 패키지 밑에 dao 패키지를 생성한다.
 
