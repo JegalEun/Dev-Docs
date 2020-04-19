@@ -295,3 +295,4 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 [mybatis개념] https://sjh836.tistory.com/127 <br>
 [마이바티스와 sql연동하기] https://baessi.tistory.com/8 <br>
 [마이바티스연동과 개념] https://addio3305.tistory.com/62 <br>
+[개발환경 설정] https://velog.io/@wimes/2.-개발환경설정-Spring-MyBatis-MySQL의-설정-2zk4cf5gof
