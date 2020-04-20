@@ -287,7 +287,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 - SQL을 직접 작성하여 반복되는 작업이 존재
 - SQL과 데이터베이스 벤더에 대한 종속성(오라클에서 mySQL로 바꾸면 함수들을 바꿔줘야한다.)
 
-Reference <br>
+#### Reference <br>
 [Mybatis개념](https://sjh836.tistory.com/127) <br>
 [마이바티스와 sql연동하기](https://baessi.tistory.com/8) <br>
 [마이바티스연동과 개념](https://addio3305.tistory.com/62) <br> 
