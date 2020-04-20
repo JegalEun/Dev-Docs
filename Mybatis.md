@@ -14,7 +14,7 @@ SQL 쿼리문을 xml 형식의 파일로 분리시켜 저장관리할 수 있다
 
 따라서 SQL의 변경 등이 발생할 경우, 프로그램(java 파일)을 수정하기 때문에 그 유연성이 좋지 못했는데, MyBatis에서는 SQL을 xml 파일에 작성하기 때문에, SQL의 변환이 자유롭고, 가독성이 좋다는 장점이 있다.
 
-# Mybatis를 쓰는 이유
+## Mybatis를 쓰는 이유
 ###### Mybatis가 없었을 때의 소스 방식
 ~~~java
 public Entity selectFAQList(UserConnection conn, Entity param) throws SQLException {
@@ -62,7 +62,7 @@ xml로 빼내서 쿼리문을 작성하면 내부적 처리는 Mybatis에서 모
 
 핵심적으로 DAO는 SessionTemplate를 통해 Mybatis를 호출해 데이터베이스에 접근한다. 
 
-# Mybatis 연동하기
+## Mybatis 연동하기
 spring과 Mybatis는 연결한 전체 구조는 아래의 그림과 같다. 
 ![image 복사본](https://user-images.githubusercontent.com/43868540/79680054-6f9b6d00-8246-11ea-9658-d5fb79be24d3.png)
 **1. Mybatis 라이브러리 추가**
@@ -278,19 +278,19 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   </select>
 ~~~
 
-#  Mybatis의 특징
+##  Mybatis의 특징
 - 간단한 퍼시스턴스 프레임워크이다.
 - 코드재사용으로 인한 개발자의 부담을 줄여주고 생산성을 높인다. 
 - SQL문이 어플리케이션 소스코드로부터 완전히 분리되어 가독성이 높다.
 
-# Mybatis의 단점
+## Mybatis의 단점
 - SQL을 직접 작성하여 반복되는 작업이 존재
 - SQL과 데이터베이스 벤더에 대한 종속성(오라클에서 mySQL로 바꾸면 함수들을 바꿔줘야한다.)
 
 <hr>
 참고 <br>
-[Mybatis개념](https://sjh836.tistory.com/127)
+[Mybatis개념] (https://sjh836.tistory.com/127)
 [마이바티스와 sql연동하기](https://baessi.tistory.com/8)
-[마이바티스연동과 개념] (https://addio3305.tistory.com/62)
-[개발환경 설정] (https://velog.io/@wimes/2.-개발환경설정-Spring-MyBatis-MySQL의-설정-2zk4cf5gof)
-[Mybatis와 JPA 비교] (https://jar100.tistory.com/25)
+[마이바티스연동과 개념](https://addio3305.tistory.com/62)
+[개발환경 설정](https://velog.io/@wimes/2.-개발환경설정-Spring-MyBatis-MySQL의-설정-2zk4cf5gof)
+[Mybatis와 JPA 비교](https://jar100.tistory.com/25)
