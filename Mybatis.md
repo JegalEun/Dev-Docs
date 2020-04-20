@@ -39,7 +39,7 @@ public Entity selectFAQList(UserConnection conn, Entity param) throws SQLExcepti
 그래서 sql 구문과 java 코드의 분리 필요성을 느끼게 된다. 
 
 ######  Mybatis적용 후 소스 방식
-~~~
+~~~java
 <?xml version="1.0" encoding="UTF-8"?>
   <ENTITY id="table.getTable1List" type="SQL" return="List">
     <![CDATA[
@@ -74,7 +74,7 @@ Maven은 내가 사용할 라이브러리뿐만 아니라 해당 라이브러리
 
 pom.xml의 <dependencied>태그 안에 <dependencied>추가하기!
 
-~~~
+~~~java
 <!-- mybatis -->
       <dependency>
          <groupId>org.mybatis</groupId>
@@ -121,7 +121,7 @@ pom.xml의 <dependencied>태그 안에 <dependencied>추가하기!
 
 /WEB_INF/spring/appServlet경로에 root-context.xml 파일 생성!
 
-~~~
+~~~java
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -174,7 +174,7 @@ SqlSessionTemplate은 마이바티스 스프링 연동 모듈의 핵심이다.
 SqlSessionTemplate은 SqlSession을 구현하고 코드에서 SqlSession를 대체하는 역할을 한다. 
 
 **3. mybatis-config.xml 작성**
-~~~
+~~~java
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration
 PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
@@ -201,7 +201,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 
 web.xml은 서버가 최초로 실행될 때 해당 위치에 있는 context 파일을 모조리 읽어들이는 것을 뜻한다. 
 context 파일을 읽어들이면서 xml을 인식한다. 
-~~~
+~~~java
 <context-param>
       <param-name>contextConfigLocation</param-name>
       <param-value>
@@ -222,7 +222,7 @@ DAO는 sql 문의 id를 통해 데이터베이스와 sql 문을 연결해준다.
 2) dao 패키지 안에 AbstractDAO.java를 생성한다.
 
 3) AbstractDAO.java에 코드 작성한다.
-~~~
+~~~java
 public class AbstractDAO { 
 	protected Log log = LogFactory.getLog(AbstractDAO.class); 
 	@Autowired private SqlSessionTemplate sqlSession; 
@@ -264,7 +264,7 @@ public class AbstractDAO {
 이 부분대로 src/main/resources/sql/_.xml 파일을 생성해서 사용하면 된다.
 
 paper-mapper.xml
-~~~
+~~~java
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
@@ -283,9 +283,14 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 - 코드재사용으로 인한 개발자의 부담을 줄여주고 생산성을 높인다. 
 - SQL문이 어플리케이션 소스코드로부터 완전히 분리되어 가독성이 높다.
 
+# Mybatis의 단점
+- SQL을 직접 작성하여 반복되는 작업이 존재
+- SQL과 데이터베이스 벤더에 대한 종속성(오라클에서 mySQL로 바꾸면 함수들을 바꿔줘야한다.)
+
 <hr>
 참고 <br>
-[mybatis개념] https://sjh836.tistory.com/127 <br>
-[마이바티스와 sql연동하기] https://baessi.tistory.com/8 <br>
-[마이바티스연동과 개념] https://addio3305.tistory.com/62 <br>
-[개발환경 설정] https://velog.io/@wimes/2.-개발환경설정-Spring-MyBatis-MySQL의-설정-2zk4cf5gof
+[Mybatis개념](https://sjh836.tistory.com/127)
+[마이바티스와 sql연동하기](https://baessi.tistory.com/8)
+[마이바티스연동과 개념] (https://addio3305.tistory.com/62)
+[개발환경 설정] (https://velog.io/@wimes/2.-개발환경설정-Spring-MyBatis-MySQL의-설정-2zk4cf5gof)
+[Mybatis와 JPA 비교] (https://jar100.tistory.com/25)
