@@ -86,4 +86,4 @@ require 'tk'
 - [프레임워크와 라이브러이의 차이](https://mangkyu.tistory.com/4)
 - [제어의 역전](https://webclub.tistory.com/458)
 - [제어의 역전 예](https://vandbt.tistory.com/43)
-- [Tkinter] (http://pythonstudy.xyz/python/article/120-Tkinter-소개)
+- [Tkinter](http://pythonstudy.xyz/python/article/120-Tkinter-소개)
