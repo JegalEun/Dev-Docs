@@ -21,7 +21,7 @@ REST API는 인터넷 식별자(URI)와 HTTP 프로토콜을 기반으로 한다
 
 REST는 웹에 최적화되어 있고, 데이터 포맷이 JSON이기 때문에 브라우저들 간에 호환성이 좋다. 또한, 구축과 확장이 간단해 성능과 확장성이 뛰어나다. 
 
-### SOAP의 장점과 단점
+## SOAP의 장점과 단점
 장점
 - SOAP는 플랫폼과 프로그래밍 언어에 독립적이다.
 - SOAP는 웹 서비스를 제공하기 위한 표준(WSDL, UDDI, WS-Security)이 잘 정립되어 있다.
@@ -33,18 +33,18 @@ REST는 웹에 최적화되어 있고, 데이터 포맷이 JSON이기 때문에 
 - REST에 비해 구조가 복잡하기 때문에 상대적으로 무겁고 속도도 느리다.
 - 메시지 인코딩/디코딩 과정 등 개발 난이도가 높아 개발환경의 지원이 필요하다.
 
-### SOAP 아키텍처
+## SOAP 아키텍처
 SOAP는 일반적으로 UDDI 레지스토리를 통해 웹서비스를 등록(Publish)하고, 탐색(find)하고, 바인딩(Bind)하여 사용한다. 
+
+###동작원리
 
 ![SOAP 동작원리](https://user-images.githubusercontent.com/43868540/84564061-1ad62780-ad9b-11ea-862f-9ca9563e6c57.png)
 
-동작원리로는 
 1. 서비스 요청자가 SOAP로 인코딩하여 웹 서비스 요청을 서비스 제공자에게 전달한다.
 2. 서비스 제공자는 이를 디코딩하여 적절한 서비스 로직을 수행시켜서 결과를 얻는다.
 3. 로직을 수행시켜서 얻은 결과를 SOAP로 인코딩하여 반환한다. 
 
 여기서 WSDL과 UDDI의 개념이 모호할텐데 쉽게 WSDL은 xml이고, UDDI는 일종의 검색 엔진이라고 생각하면 된다.
-
 그렇다면 인코딩을 위한 SOAP의 메시지 구조를 한번 살펴보자.
 
 ![SOAP 메시지 구조](https://user-images.githubusercontent.com/43868540/84564122-a780e580-ad9b-11ea-9f6d-e4803e1c9a6e.jpeg)
@@ -56,9 +56,9 @@ SOAP 봉투(envelope), SOAP 헤더(header), SOAP 바디(body)로 구성된 하�
 
 
 #### Reference
-[SOAP vs REST](http://blog.wishket.com/soap-api-vs-rest-api-두-방식의-가장-큰-차이점은/)
-[SOAP](https://mygumi.tistory.com/55)
-[SOAP 구조])(https://www.slideshare.net/yjaeseok/soap-rest)
-[SOAP동작원리 이미지](https://devkingdom.tistory.com/12)
-[SOAP 메시지](https://mygumi.tistory.com/55)
-[SOAP동작원리 이미지](https://devkingdom.tistory.com/12)
+- [SOAP vs REST](http://blog.wishket.com/soap-api-vs-rest-api-두-방식의-가장-큰-차이점은/)
+- [SOAP](https://mygumi.tistory.com/55)
+-[SOAP 구조](https://www.slideshare.net/yjaeseok/soap-rest)
+- [SOAP동작원리 이미지](https://devkingdom.tistory.com/12)
+- [SOAP 메시지](https://mygumi.tistory.com/55)
+- [SOAP동작원리 이미지](https://devkingdom.tistory.com/12)
