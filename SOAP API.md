@@ -5,7 +5,7 @@ SOAP와 REST는 일반적으로 웹 서비스라고 불린다. 이러한 서비�
 저번 시간에는 REST API에 대해 자세히 알아보았으니 이번 시간에는 SOAP에 대해서 자세히 알아보는 시간을 가지자.
 
 ## SOAP API?
-SOAP는 Simple Object Access Protocol의 약자이며 HTTP, HTTPS, SMTP 등을 통해 **XML 기반**의 메시지를 컴퓨터 네트워크 상에서 교환하는 프로토콜이다.
+SOAP는 Simple Object Access Protocol의 약자이며 HTTP, HTTPS, SMTP 등을 통해 `XML 기반`의 메시지를 분산된 컴퓨터 네트워크 환경에서 교환하는 `프로토콜`이다.
 보안이나 메시지 전송 등에 있어서 많은 표준들이 정해져있기 때문에 REST API보다 조금 더 복잡하다.
 
 SOAP는 SSL, WS-Security라는 자체 표준의 보안 기능을 가지고 있기 때문에 보안 수준이 엄격하다. 
@@ -16,13 +16,13 @@ SOAP는 SSL, WS-Security라는 자체 표준의 보안 기능을 가지고 있�
 
 따라서 은행용 모바일 앱, 신뢰할 수 있는 메시징 앱 등 보안수준이 높아야하거나 또는 ACID(원자성, 일관성, 고립성, 지속성)를 준수해야하는 경우라면 SOAP방식이 더욱 선호된다.
 
-> 원자성은 작업들이 부분적으로 실행되다가 중단되지 않는 것을 보장하는 능력이다.
+> **원자성**: 작업들이 부분적으로 실행되다가 중단되지 않는 것을 보장하는 능력이다.
 
-> 일관성은 트랜잭션이 실행을 성공적으로 완료하면 일관성있는 데이터베이스 상태를 유지하는 것을 의미한다.
+> **일관성**: 트랜잭션이 실행을 성공적으로 완료하면 일관성있는 데이터베이스 상태를 유지하는 것을 의미한다.
 
-> 고립성은 트랜잭션 실행 시 다른 트랜잭션이 끼어들지 못하도록 보장하는 것을 의미한다.
+> **고립성**: 트랜잭션 실행 시 다른 트랜잭션이 끼어들지 못하도록 보장하는 것을 의미한다.
 
-> 지속성은 성공적으로 실행 된 트랜잭션은 영원히 반영되어야 함을 의미한다.  
+> **지속성**: 성공적으로 실행 된 트랜잭션은 영원히 반영되어야 함을 의미한다.  
 
 ## SOAP 아키텍처
 SOAP는 일반적으로 UDDI 레지스토리를 통해 웹서비스를 `등록(Publish)`하고, `탐색(find)`하고, `바인딩(Bind)`하여 사용한다. 
@@ -36,30 +36,30 @@ SOAP는 일반적으로 UDDI 레지스토리를 통해 웹서비스를 `등록(P
 2. 서비스 제공자는 이를 디코딩하여 적절한 서비스 로직을 수행시켜서 결과를 얻는다.
 3. 로직을 수행시켜서 얻은 결과를 SOAP로 인코딩하여 반환한다. 
 
-여기서 WSDL과 UDDI의 개념이 모호할 것이다. 네트워크 상에 있는 서비스를 접근하고 사용하는 방법을 기술한 것이 **WSDL**이고 XML기반 언어이다. 
-WSDL이 저장되어 있는 위치만 안다면 서비스를 바로 적용해서 사용할 수 있기 때문에 편리하다. 그렇다면 WSDL은 어디에 저장되어 있을까?
+여기서 WSDL과 UDDI의 개념이 모호할 것이다. 네트워크 상에 웹 서비스를 정의하고 설명한 것이 `WSDL`이고 XML기반 언어이다. 서비스 제공자가 WSDL을 발행한다.
+네트워크 상에 웹 서비스가 정의된 WSDL가 존재하고 이러한 WSDL 저장되어 있는 위치만 안다면 바로 적용해서 사용할 수 있다. 그렇다면 WSDL은 어디에 저장되어 있을까?
 
-이러한 WSDL이 위치한 저장소가 **UDDI 레지스토리**이다. 
-이러한 저장소에 있는 자료를 꺼내기 위해 실행 프로토콜인 **SOAP**를 사용한다. 
+이러한 WSDL이 위치한 저장소가 `UDDI 레지스토리`이다. 
+이러한 저장소에 있는 자료를 꺼내기 위해 실행 프로토콜인 `SOAP`를 사용한다. 
 
-한번 발행된 WSDL은 UDDI(레지스토리)에 저장이 되며 잠재적인 사용자가 원하는 기능의 웹서비스가 구현되었는 지 검색하는데 사용된다. 
-필요한 웹서비스의 대한 정보를 UDDI를 통해 탐색, 선택을 하면 선택된 웹서비스의 WSDL을 파싱하여 SOAP메시지로 인코딩하여 사용자에게 반환한다. 
+**한번 발행된 WSDL은 UDDI(레지스토리)에 저장이 되며 잠재적인 사용자가 원하는 기능의 웹서비스가 구현되었는 지 검색하는데 사용된다.**
+SOAP을 사용해 필요한 웹서비스의 대한 정보를 UDDI를 통해 탐색, 선택을 하면 선택된 웹 서비스의 WSDL을 파싱하여 SOAP메시지로 인코딩하여 반환한다. 
 
 그렇다면 SOAP의 메시지 구조를 한번 살펴보자.
 
 ![SOAP 메시지 구조](https://user-images.githubusercontent.com/43868540/84564122-a780e580-ad9b-11ea-9f6d-e4803e1c9a6e.jpeg)
 > [출처](https://mygumi.tistory.com/55)
 
-크게 HTTP Header와 SOAP part, Attachment 3개로 나뉘어 진다.
+크게 `HTTP Header`와 `SOAP part`, `Attachment` 3개로 나뉘어 진다.
 
-HTTP Header에는 송수신하면서 필요한 정보들(시간, 인터넷 호스트와 포트, 캐시, 상태코드, 인코딩 등)을 표시한다. 
+`HTTP Header`에는 송수신하면서 필요한 정보들(시간, 인터넷 호스트와 포트, 상태코드, 인코딩 등)을 표시한다. 
 
 요청과 응답에 대한 코드의 상세한 설명은 [이 곳](http://egloos.zum.com/tequiero35/v/1026372)를 참고하길 바란다.
 
 <img width="570" alt="스크린샷 2020-06-14 오전 12 12 21" src="https://user-images.githubusercontent.com/43868540/84572270-d87d0c80-add3-11ea-8817-d81df090eb4f.png">
 > [출처](https://www.slideshare.net/yjaeseok/soap-rest)
 
-SOAP Part안에는 위의 사진처럼 xml형태로 데이터가 들어가 있다. 
+`SOAP Part`안에는 위의 사진처럼 xml형태로 데이터가 들어가 있다. 
 
 SOAP 봉투(envelope), SOAP 헤더(header), SOAP 바디(body)로 구성된 하나의 xml문서로 표현된다. 
 
@@ -81,20 +81,17 @@ SOAP 봉투(envelope), SOAP 헤더(header), SOAP 바디(body)로 구성된 하�
 ## SOAP의 장점과 단점
 장점
 - SOAP는 플랫폼과 프로그래밍 언어에 독립적이다.
+> 어떤 언어로 작성되더라도 SOAP만 준수된다면 플랫폼 독립적이라 데이터 통신이 가능함
 - SOAP는 웹 서비스를 제공하기 위한 표준(WSDL, UDDI, WS-Security)이 잘 정립되어 있다.
 - SOAP는 에러 처리에 대한 내용이 기본으로 내장되어 있다.
 - SOAP는 분산 환경에 적합하다.
 
 단점
-- SOAP는 복잡한 구조로 인한 오버헤드가 있으며, 이는 SOAP의 확장을 저해한다.
 - REST에 비해 구조가 복잡하기 때문에 상대적으로 무겁고 속도도 느리다.
 - 메시지 인코딩/디코딩 과정 등 개발 난이도가 높아 개발환경의 지원이 필요하다.
 
-### REST API보다 SOAP API를 사용할 때?
-
-
 #### Reference
 - [SOAP vs REST](http://blog.wishket.com/soap-api-vs-rest-api-두-방식의-가장-큰-차이점은/)
-- [ACID] (https://goodgid.github.io/ACID/)
+- [ACID](https://goodgid.github.io/ACID/)
 - [SOAP](https://mygumi.tistory.com/55)
-- [WDSL, UDDI] (https://beatz.tistory.com/entry/SOAP-WSDL-UDDI)
+- [WDSL, UDDI](https://beatz.tistory.com/entry/SOAP-WSDL-UDDI)
