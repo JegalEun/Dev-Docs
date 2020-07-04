@@ -122,6 +122,8 @@ test.json
   {"name":  "심세영","msg":  "경기도 안양", "birthday": {"month": 6,"day": 19}}
 ]
 ```
+### 결과 화면
+<img width="431" alt="jsonparse" src="https://user-images.githubusercontent.com/43868540/86513605-89604f80-be46-11ea-91d9-30d9d99a6acf.png">
 
 ## XML parse
 activity_main.xml
@@ -261,13 +263,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-    }
-
-    public void clickBtn(View view) {
-
-        String s="";
-
         AssetManager am = getResources().getAssets();
         InputStream is = null;
 
@@ -353,7 +348,9 @@ public class MainActivity extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
     }
+
 }
 ```
 
@@ -367,4 +364,7 @@ test2.xml
     <OVER20>true</OVER20>
 </CONTACT>
 ```
+
+### 결과화면
+
 
