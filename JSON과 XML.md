@@ -1,20 +1,50 @@
 # JSON과 XML
-api를 파싱하는 데이터 형식에는 JSON형식과 XML형식이 있다고 들었다. 
+api를 파싱하는 데이터 형식에는 **JSON형식**과 **XML형식**이 있다고 들었다. 
 
 XML과 JSON은 데이터를 전송하기위한 데이터 포맷 형식이라고만 알고 있고 차이를 정확히 모르기 때문에 정리를 해보았다.
 
 ## JSON
 JSON은 JavaScript Object Notation의 약자로, 데이터를 저장하거나 전송할 때 많이 사용되는 데이터 교환 형식이다. 최근에는 용량이 작아서 JSON이 XML을 대체에서 데이터 전송 등에 많이 사용한다. 
 
+### JSON 문법
+![JSON 문법](https://user-images.githubusercontent.com/43868540/86515808-a9980a80-be56-11ea-9269-a15c597bda1f.PNG)
 
-### JSON의 특징
+[출처 surim014.log](https://velog.io/@surim014/JSON%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80)
+- json 형식은 자바스크립트 객체와 마찬가지로 `key/value`가 존재할 수 있으며 key값이나 문자열은 항상 쌍따옴표를 이용하여 표기해야한다. 
+- 일반 자바스크립트의 객체처럼 원하는 만큼 중첩시켜서 사용할 수도 있다.
+- json 형식에서는 null, number, string, array, object, boolean을 사용할 수 있다.
+
+### JSON 장점
+- 내용이 **함축적**으로 최소한의 정보만을 가지고 있다.
+- **최소한의 정보**만 가지고 있기 때문에 속도는 그만큼 빨라진다.
+- 파싱이 매우 **간편**하고 사용하기 쉽다.
+
+### JSON 단점
+- 내용이 함축적이다 보니 내용의 의미파악하기 힘들다.
+- **적은 규격의 데이터 전송**에 적합한 방식이기때문에 XML보다는 빠르지만 대용량급 데이터 송수신엔 부적합하다.
 
 ## XML이란?
-XML은 EXtensible Markup Language의 약자로, HTML과 매우 비슷한 문자 기반으 마크업 언어이다.
+XML은 EXtensible Markup Language의 약자로, HTML과 매우 비슷한 문자 기반의 마크업 언어이다.
 
 XML은 HTML처럼 데이터를 보여주는 목적이 아닌, 데이터를 저장하고 전달할 목적으로만 만들어졌다.
 또한, XML 태그는 HTML 태그처럼 미리 정의되어 있지 않고, 사용자가 직접 정의할 수 있다.
 
+### XML 문법
+![xml문법](https://user-images.githubusercontent.com/43868540/86515903-730ebf80-be57-11ea-83fd-85a2c1afb8aa.PNG)
+
+[출처 myeonguni.tistory](https://myeonguni.tistory.com/1087)
+- xml 선언부가 있으며 인코딩방식과 버전을 기입한다.
+- `element`는 시작과 종료 태그로 한 쌍이 되어야 한다.
+- 요소의 시작 태그와 끝 태그 사이에 들어있는 텍스트는 `element content`라고 부르고 그냥 데이터이다.
+- XML 태그는 대소문자 구분이 있다. 
+
+### XML 장점
+- 작성하기가 **간편**하다 (tag구조)
+- 사람이 읽기가 쉽다. 즉, 정보들이 의미하는 바를 한눈에 보기 좋다.
+
+### XML 단점
+- tag때문에 실데이터에 비해 문서의 양이 필요이상으로 많다.
+- 배열형식이나 반복구조의 경우 불필요한 데이터가 계속해서 나타난다. 결국 파싱이 힘들어지고 속도는 느려진다.
 ## JSON parse
 
 activity_main.xml
@@ -385,3 +415,6 @@ test2.xml
 ### 결과화면
 <img width="419" alt="xmlparse" src="https://user-images.githubusercontent.com/43868540/86514641-4efab080-be4e-11ea-9efb-311c2c7ed013.png">
 
+**** REFERENCE
+- [XML 구조](https://usroom.tistory.com/entry/XML%EC%9D%98-%EB%AC%B8%EB%B2%95)
+- [XML과 JSON의 장단점](https://usbs.tistory.com/entry/XML-JSON-%EA%B0%84%EB%8B%A8%ED%95%9C-%EB%B9%84%EA%B5%90-%EB%B6%84%EC%84%9D)
