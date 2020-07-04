@@ -1,3 +1,20 @@
+# JSON과 XML
+api를 파싱하는 데이터 형식에는 JSON형식과 XML형식이 있다고 들었다. 
+
+XML과 JSON은 데이터를 전송하기위한 데이터 포맷 형식이라고만 알고 있고 차이를 정확히 모르기 때문에 정리를 해보았다.
+
+## JSON
+JSON은 JavaScript Object Notation의 약자로, 데이터를 저장하거나 전송할 때 많이 사용되는 데이터 교환 형식이다. 최근에는 용량이 작아서 JSON이 XML을 대체에서 데이터 전송 등에 많이 사용한다. 
+
+
+### JSON의 특징
+
+## XML이란?
+XML은 EXtensible Markup Language의 약자로, HTML과 매우 비슷한 문자 기반으 마크업 언어이다.
+
+XML은 HTML처럼 데이터를 보여주는 목적이 아닌, 데이터를 저장하고 전달할 목적으로만 만들어졌다.
+또한, XML 태그는 HTML 태그처럼 미리 정의되어 있지 않고, 사용자가 직접 정의할 수 있다.
+
 ## JSON parse
 
 activity_main.xml
@@ -366,5 +383,5 @@ test2.xml
 ```
 
 ### 결과화면
-
+<img width="419" alt="xmlparse" src="https://user-images.githubusercontent.com/43868540/86514641-4efab080-be4e-11ea-9efb-311c2c7ed013.png">
 
