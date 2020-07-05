@@ -433,6 +433,7 @@ xml 데이터를 파싱할 때는 루프를 돌면서 XML 요소(element)를 파
 
 <img width="443" alt="XMLparser속성" src="https://user-images.githubusercontent.com/43868540/86525423-ddf4e080-bec1-11ea-8350-452b48180759.png">
 <img width="313" alt="xmlparse 속성2" src="https://user-images.githubusercontent.com/43868540/86525524-2bbe1880-bec3-11ea-84a9-f6385d7c7044.png">
+
 [출처 codedragon.tistory](https://codedragon.tistory.com/6755)
 
 
@@ -440,6 +441,7 @@ xml 데이터를 파싱할 때는 루프를 돌면서 XML 요소(element)를 파
 <img width="419" alt="xmlparse" src="https://user-images.githubusercontent.com/43868540/86514641-4efab080-be4e-11ea-9efb-311c2c7ed013.png">
 
 #### REFERENCE
+- [JSON과 XML](http://tcpschool.com/json/json_intro_xml)
 - [XML 구조](https://usroom.tistory.com/entry/XML%EC%9D%98-%EB%AC%B8%EB%B2%95)
 - [XML과 JSON의 장단점](https://usbs.tistory.com/entry/XML-JSON-%EA%B0%84%EB%8B%A8%ED%95%9C-%EB%B9%84%EA%B5%90-%EB%B6%84%EC%84%9D)
 - [XML 파싱](https://recipes4dev.tistory.com/137)
