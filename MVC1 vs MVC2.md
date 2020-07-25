@@ -18,15 +18,14 @@
 ## MVC1
 쉽게 말해 `M+(V+C)`라고 보면 된다.
 
-- 웹 브라우저의 요청을 `jsp`가 받아서 처리하는 구조이고, **JSP가 Controller와 View의 기능을 모두 담당**한다.
-
-- jsp에 비지니스 로직을 처리하기 위한 코드와 웹 브라우저에 결과를 보여주기 위한 출력 관리 코드가 뒤섞여 있는 구조이다.
-
+- 웹 브라우저의 요청을 jsp페이지가 받아서 처리하는 구조이고, **JSP가 Controller와 View의 기능을 모두 담당**한다.
+- jsp페이지에 비지니스 로직을 처리하기 위한 코드와 웹 브라우저에 결과를 보여주기 위한 출력 관리 코드가 뒤섞여 있는 구조이다.
+- jsp 내부에서 java로 Controller의 기능을 수행한다. view는 HTML과 CSS로 처리하고 event처리 및 제어는 javascript로 실행한다.
 - 재사용이 힘들고, 코드가 뒤섞여 있어 가독성이 떨어진다.
+> 많은 프로세싱이 요구되는 대형 프로젝트의 경우 적합하지 않다.
 
 ![MVC1 model](https://user-images.githubusercontent.com/43868540/88455376-c18c0880-ceaf-11ea-90b2-fcf2be11b7f6.png)
-
-[출처 creator0609.tistory](https://creator0609.tistory.com/entry/MVC1-MVC2-차이)
+- [출처 creator0609.tistory](https://creator0609.tistory.com/entry/MVC1-MVC2-차이)
 
 ### 장점
 - 단순해서 개발시간 단축에 유리하다.
@@ -40,14 +39,16 @@
 일반적으로 MVC라고 하면 MVC2모델을 이야기한다고 보면된다.
 
 - MVC1 구조와 달리 웹 브라우저의 요청을 하나의 `서블릿`이 받게 된다. 여기서 서블릿은 `controller`이다. 
-
-- `서블릿`은 웹 브라우저의 요청을 알맞게 처리한 후 그 결과를 `jsp`로 넘기게 된다.
-
+- `서블릿`은 웹 브라우저의 요청을 알맞게 처리한 후 그 결과를 jsp페이지로 넘기게 된다.
 - 요청처리, 데이터 접근, 비지니스 로직을 포함하는 **Controller와 View가 엄격히 구분**되어 있다. 
+> 대형 프로젝트의 경우에는 적합하나 구조 설계를 위한 충분한 시간이 필요하다. 
 
 ![MVC2 model](https://user-images.githubusercontent.com/43868540/88455358-a5886700-ceaf-11ea-9be5-38e234dbfd7c.png)
+- [출처 creator0609.tistory](https://creator0609.tistory.com/entry/MVC1-MVC2-차이)
 
-[출처 creator0609.tistory](https://creator0609.tistory.com/entry/MVC1-MVC2-차이)
+### 전체적인 컴포넌트 설계
+![전체적인 컴포넌트 설계](https://user-images.githubusercontent.com/43868540/88455435-39f2c980-ceb0-11ea-8123-4e31d9db21e1.png)
+- [출처 creator0609.tistory](https://creator0609.tistory.com/entry/MVC1-MVC2-차이)
 
 ### 장점
 - 비지니스 로직과 뷰가 분리되어 유지보수 및 확장성이 뛰어나기때문에 큰 프로젝트에서 사용된다.
@@ -55,12 +56,6 @@
 
 ### 단점
 - 개발초기 비용증가 및 개발 기간이 늘어난다. 
-
-## 정리
-MVC1과 MVC2는 View와 Controller 기능이 구분되어 있는 지에 차이가 있다.
-
-MVC1은 jsp에서 view와 controller의 기능까지 구현이 되어있고, MVC2는 view와 controller의 구분이 명확하다. 
-
 ----
 #### Reference
 - [MVC1과 MVC2의 개념](https://nickjoit.tistory.com/9)
