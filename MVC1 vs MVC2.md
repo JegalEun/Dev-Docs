@@ -19,12 +19,31 @@
 - jsp안에서 `controller`와 `view`의 역할을 jsp가 하는 것이다. 이 때문에 재사용이 힘들고, 코드가 뒤섞여 있어 가독성이 떨어진다.
 
 ### 장점
+- 단순해서 개발시간 단축에 유리하다.
+- 중소형 프로젝트에 적합하다.
+
+#### 단점
+- 웹 어플리케이션이 복잡해질수록 유지보수가 힘들어진다.
+- 디자이너와 개발자가 원활한 소통이 필요하다.
 
 ## MVC2
 MVC1 구조와 달리 웹 브라우저의 요청을 하나의 `서블릿`이 받게 된다. 여기서 서블릿은 `controller`이다. 
+
 `서블릿`은 웹 브라우저의 요청을 알맞게 처리한 후 그 결과를 `jsp`로 넘기게 된다.
 
+요청처리, 데이터 접근, 비지니스 로직을 포함하는 **Controller와 View가 엄격히 구분**되어 있다. 
 
+### 장점
+- 비지니스 로직과 뷰가 분리되어 유지보수 및 확장성이 뛰어남
+- 개발자, 디자이너의 역할이 분리되어 책임이 분명해진다.
+
+### 단점
+- 개발초기 비용증가 및 개발 기간이 늘어난다. 
 
 ## 정리
 MVC1과 MVC2는 View와 Controller 기능이 구분되어 있는 지에 차이가 있다.
+
+----
+#### Reference
+- [MVC1](https://nickjoit.tistory.com/9)
+- [MVC1,2의 장단점](http://blog.naver.com/PostView.nhn?blogId=koliaok&logNo=220566166684&categoryNo=0&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=postView)
