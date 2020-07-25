@@ -1,8 +1,10 @@
 # MVC1 vs MVC2
-주제를 무엇으로 하면 좋을까생각하다가 MVC model에는 두 가지 모델이 있다는 것을 발견하였다. 
+주제를 무엇으로 하면 좋을까생각하다가 MVC model에는  `MVC1`, `MVC2` 이렇게 두 가지 모델이 있다는 것을 발견하였다. 
+
+생소한 단어였기때문에 정리를 해보았다.
 
 ## MVC
-우선 MVC란 Model, View, Controller의 줄임말로써 사용자와 상호작용하는 S/W를 디자인함에 있어 세 가지 요소로 쪼개어 하는 것을 가리킨다. 
+우선 MVC란 `Model`, `View`, `Controller`의 줄임말로써 사용자와 상호작용하는 S/W를 디자인함에 있어 세 가지 요소로 쪼개어 하는 것을 가리킨다. 
 
 **1. Model**
 > 프로그램의 내부 상태, 즉 프로그램의 정보(데이터)를 말하는 것이다. 
@@ -16,13 +18,13 @@
 ## MVC1
 쉽게 말해 `M+(V+C)`라고 보면 된다.
 
-웹 브라우저의 요청을 `jsp`가 받아서 처리하는 구조이고, **JSP가 Controller와 View의 기능을 모두 담당**한다.
+- 웹 브라우저의 요청을 `jsp`가 받아서 처리하는 구조이고, **JSP가 Controller와 View의 기능을 모두 담당**한다.
 
-jsp에 비지니스 로직을 처리하기 위한 코드와 웹 브라우저에 결과를 보여주기 위한 출력 관리 코드가 뒤섞여 있는 구조이다.
+- jsp에 비지니스 로직을 처리하기 위한 코드와 웹 브라우저에 결과를 보여주기 위한 출력 관리 코드가 뒤섞여 있는 구조이다.
 
-이 때문에 재사용이 힘들고, 코드가 뒤섞여 있어 가독성이 떨어진다.
+- 재사용이 힘들고, 코드가 뒤섞여 있어 가독성이 떨어진다.
 
-![MVC1](https://user-images.githubusercontent.com/43868540/88454779-c4d1c500-ceac-11ea-882a-6ff27f192243.gif)
+![MVC1 model](https://user-images.githubusercontent.com/43868540/88455376-c18c0880-ceaf-11ea-90b2-fcf2be11b7f6.png)
 
 [출처 creator0609.tistory](https://creator0609.tistory.com/entry/MVC1-MVC2-차이)
 
@@ -36,13 +38,14 @@ jsp에 비지니스 로직을 처리하기 위한 코드와 웹 브라우저에 
 
 ## MVC2
 일반적으로 MVC라고 하면 MVC2모델을 이야기한다고 보면된다.
-MVC1 구조와 달리 웹 브라우저의 요청을 하나의 `서블릿`이 받게 된다. 여기서 서블릿은 `controller`이다. 
 
-`서블릿`은 웹 브라우저의 요청을 알맞게 처리한 후 그 결과를 `jsp`로 넘기게 된다.
+- MVC1 구조와 달리 웹 브라우저의 요청을 하나의 `서블릿`이 받게 된다. 여기서 서블릿은 `controller`이다. 
 
-요청처리, 데이터 접근, 비지니스 로직을 포함하는 **Controller와 View가 엄격히 구분**되어 있다. 
+- `서블릿`은 웹 브라우저의 요청을 알맞게 처리한 후 그 결과를 `jsp`로 넘기게 된다.
 
-![MVC2](https://user-images.githubusercontent.com/43868540/88454812-f9de1780-ceac-11ea-86af-8b16d50bdf32.gif)
+- 요청처리, 데이터 접근, 비지니스 로직을 포함하는 **Controller와 View가 엄격히 구분**되어 있다. 
+
+![MVC2 model](https://user-images.githubusercontent.com/43868540/88455358-a5886700-ceaf-11ea-9be5-38e234dbfd7c.png)
 
 [출처 creator0609.tistory](https://creator0609.tistory.com/entry/MVC1-MVC2-차이)
 
@@ -55,6 +58,8 @@ MVC1 구조와 달리 웹 브라우저의 요청을 하나의 `서블릿`이 받
 
 ## 정리
 MVC1과 MVC2는 View와 Controller 기능이 구분되어 있는 지에 차이가 있다.
+
+MVC1은 jsp에서 view와 controller의 기능까지 구현이 되어있고, MVC2는 view와 controller의 구분이 명확하다. 
 
 ----
 #### Reference
