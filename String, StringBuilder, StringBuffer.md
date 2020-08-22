@@ -24,13 +24,13 @@
 <img width="492" alt="String 객체 특성" src="https://user-images.githubusercontent.com/43868540/90954520-dc05d180-e4af-11ea-9c7a-f4559a2fd088.png">
 <img width="577" alt="String 주소값" src="https://user-images.githubusercontent.com/43868540/90955221-b0d2b080-e4b6-11ea-8ca3-4c340a5218ed.png">
 
-- [출처 ifuwanna.tistory](https://ifuwanna.tistory.com/221)
+> [출처 ifuwanna.tistory](https://ifuwanna.tistory.com/221)
 
 위에 예제에서 "hello"값을 가지고 있던 String 클래스의 참조변수 str이 가르키는 곳에 "world"문자열을 더해 "hello world"로 변경한 것으로 착각할 수 있다.
 
 하지만 "hello"값이 들어가있던 String 클래스의 참조변수 str이 "hello world"라는 값을 가지고 있는 새로운 메모리영역을 가리키게 변경되고 기존에 "hello"로 값이 할당되어 있던 메모리 영역은 가비지 컬렉션에 의해 사라지게 된다.
 
-주소값을 출력해보니 가리키는 메모리 영역이 다른 것을 확인할 수 있다.
+직접 이클립스를 사용해 주소값을 출력해보니 가리키는 메모리 영역이 다른 것을 확인할 수 있다.
 
 따라서 `String` 객체는 이러한 이유로 문자열 연산이 많은 경우, 계속해서 문자열 객체를 만들기 때문에 **오버헤드**가 발생해 그 성능이 좋지 않다.
 
@@ -49,7 +49,7 @@
 <img width="701" alt="StringBuffer, StringBuilder" src="https://user-images.githubusercontent.com/43868540/90954550-1a02f580-e4b0-11ea-9881-a103c93c1d8a.png">
 <img width="556" alt="StringBuffer 주소" src="https://user-images.githubusercontent.com/43868540/90955243-e7a8c680-e4b6-11ea-9f26-fa5c0d67fa90.png">
 
-- [출처 ifuwanna.tistory](https://ifuwanna.tistory.com/221)
+> [출처 ifuwanna.tistory](https://ifuwanna.tistory.com/221)
 
 위에 `StringBuffer` 클래스가 참조하는 sb객체에 "hello"를 저장하고, 이 객체에 `.append()`를 이용해 "world"를 더하면 sb객체가 가리키는 메모리 영역은 변하지 않는다.
 `StringBuilder` 클래스를 사용하는 경우에도 값은 동일했다.
