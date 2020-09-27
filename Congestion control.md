@@ -46,5 +46,6 @@
 이렇게 늘어날 때는 선형적으로 조금씩 늘어나고 줄어들 때는 반으로 확 줄어드는 AIMD 방식의 특성때문에 혼잡 윈도우 크기를 그래프로 그려보면 다음과 같은 톱니 모양이 나타난다.
 
 <img width="608" alt="AIMD" src="https://user-images.githubusercontent.com/43868540/94355427-eb83c600-00be-11eb-83aa-cf7377e5df8c.png">
+
 - [출처 evan-moon.github](https://evan-moon.github.io/2019/11/26/tcp-congestion-control/)
 
