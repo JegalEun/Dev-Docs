@@ -8,6 +8,10 @@
 `HTTP 통신`은 `client`의 요청이 있을 때만 `Server`가 응답하여 처리를 한 후에 곧바로 연결을 끊는 방식이다.
 보통 많은 웹사이트들이 이 방식을 채택하고 있다. 
 
+<img width="813" alt="HTTP 통신" src="https://user-images.githubusercontent.com/43868540/96217342-5721ca80-0fbd-11eb-9d02-c846f26cabff.png">
+
+> [출처 dentuniverse.tistory](https://dentuniverse.tistory.com/22)
+
 예를 들어서 인스타그램같은 경우와 페이스북 같은 경우를 생각해보자.
 
 처음 접속한 후에 위를 잡아 당겨야 새로운 사진이 나오는 것처럼 **새로고침**이라는 요청을 주어야지 `Client`는 `Server`에게 정보를 요청하고 응답을 받아 화면을 보여준다.
@@ -28,6 +32,10 @@
 
 # Socket 통신
 `Socket 통신`은 `HTTP 통신`과 달리 `Server`와 `Client`가 특정 `Port`를 통해 연결을 성립하고 있어 **실시간으로 양방향 통신**을 하는 방식이다.
+
+<img width="779" alt="socket 통신" src="https://user-images.githubusercontent.com/43868540/96217485-a5cf6480-0fbd-11eb-80a6-ab78ee9e470f.png">
+
+> [출처 dentuniverse.tistory](https://dentuniverse.tistory.com/22)
 
 필요한 경우에 `Client`만 요청을 보낼 수 있는 `HTTP 통신`과 달리 `Socket 통신`은 `Server` 역시 `Client`로 요청을 보낼 수 있으며, 계속 연결을 유지하는 **연결지향형 통신**이기 때문에 실시간 통신이 필요한 경우에 자주 사용된다.
 
