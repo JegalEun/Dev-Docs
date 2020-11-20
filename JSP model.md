@@ -58,7 +58,7 @@ MVC1, MVC2 개념이 애초에 없던 개념이고 MVC, JSP model1, JSP model2 �
 아직까지 많은 사람들이 MVC 패턴이 MVC2 모델이라고 알고 있고 나 또한 그랬었다. 이번 시간을 통해 정확히 개념을 바로잡는 시간이 되었기를 바란다.
 
 ----
-**** Reference
+#### Reference
 - [JSP 모델 1 아키텍쳐](https://en.wikipedia.org/wiki/JSP_model_1_architecture)
 - [JSP 모델 2 아키텍쳐](https://en.wikipedia.org/wiki/JSP_model_2_architecture#cite_note-5)
 - [MVC 패턴](https://ko.wikipedia.org/wiki/%EB%AA%A8%EB%8D%B8-%EB%B7%B0-%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC)
