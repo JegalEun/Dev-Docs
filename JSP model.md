@@ -15,11 +15,14 @@
 이 것이 MVC1, MVC2라고 불리게 된 원인이다.
 
 ## Model 1 JSP programming
+
 ### Servlet
 > JAVA 코드 내에  HTML 코드 삽입
+
 ![servlet](https://user-images.githubusercontent.com/43868540/99893233-df804300-2cc0-11eb-9514-78cc6c21b25d.PNG)
 
 > [출처 mingyu0403.tistory](https://mingyu0403.tistory.com/49)
+
 처음에 웹 개발은 `Sevlet`을 이용하여 개발하였다. 서블릿은 자바를 이용해서 작성하기 때문에 자바언어에 대한 지식을 가지고 있어야 했다. 하지만 `Sevlet`을 이용한 웹 페이지는 코드가 수정되면 다시 .class 파일을 컴파일을 해야하는 단점과 웹 디자이너들은 쓰여진 JAVA 코드를 이해해야했고 코드를 유지하면서 프레젠테이션 로직을 변경하는 것이 어려웠다. 
 
 ### JSP
