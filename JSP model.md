@@ -12,16 +12,27 @@
 웹 어플리케이션의 디자인에는 일반적으로 두 가지의 디자인 모델이 있다.
 
 바로 `Model 1 JSP programming`, `Model 2 JSP programming`이다. 
-이 것때문에 MVC1, MVC2라고 불리게 된 원인이다.
+이 것이 MVC1, MVC2라고 불리게 된 원인이다.
 
 ## Model 1 JSP programming
-처음에 웹 개발은 `Sevlet`을 이용하여 그 안에 JAVA기술을 기입하고 개발였다. 하지만 `Sevlet`을 이용한 웹 페이지는 코드가 수정되면 다시 컴파일을 해야하는 단점과 웹 디자이너들은 쓰여진 JAVA 코드를 이해해야했고 코드를 유지하면서 프레젠테이션 로직을 변경하는 것이 어려웠다. 
+### Servlet
+> JAVA 코드 내에  HTML 코드 삽입
+![servlet](https://user-images.githubusercontent.com/43868540/99893233-df804300-2cc0-11eb-9514-78cc6c21b25d.PNG)
 
+> [출처 mingyu0403.tistory](https://mingyu0403.tistory.com/49)
+처음에 웹 개발은 `Sevlet`을 이용하여 개발하였다. 서블릿은 자바를 이용해서 작성하기 때문에 자바언어에 대한 지식을 가지고 있어야 했다. 하지만 `Sevlet`을 이용한 웹 페이지는 코드가 수정되면 다시 .class 파일을 컴파일을 해야하는 단점과 웹 디자이너들은 쓰여진 JAVA 코드를 이해해야했고 코드를 유지하면서 프레젠테이션 로직을 변경하는 것이 어려웠다. 
+
+### JSP
+> HTML 코드 내에 JAVA 코드 삽입
+
+![jsp](https://user-images.githubusercontent.com/43868540/99893226-c7a8bf00-2cc0-11eb-8be9-46139aeb99b9.PNG)
+
+> [출처 mingyu0403.tistory](https://mingyu0403.tistory.com/49)
 이 문제를 해결하기 위해서 `Sevlet`이 사라지고 `JSP`개념이 등장하게 되었고 디자이너는 JAVA 지식을 가질 필요가 없어졌다. 또한, `JSP`를 활용해 웹 디자이너는 프레젠테이션 로직만 따로 기술해 코드를 유지하는 것이 쉬워졌다.
 
 이것이 바로 `Model 1 JSP programming`이라고 불려왔고 `MVC1`이라고도 불렸다.
 
-<img width="399" alt="JSP Model 1" src="https://user-images.githubusercontent.com/43868540/99762801-a919bb00-2b3c-11eb-9abc-0dbcaab37dea.png">
+![JSP Model 1](https://user-images.githubusercontent.com/43868540/99762801-a919bb00-2b3c-11eb-9abc-0dbcaab37dea.png)
 
 > [출처 wikipedia](https://en.wikipedia.org/wiki/JSP_model_1_architecture)
 
@@ -30,7 +41,7 @@
 3. Java Bean은 데이터베이스에 연결하고 데이터를 가져 오거나 저장한다.
 4. 응답은 JSP에 의해 생성된 브라우저로 전송된다.
 
-하지만 `JSP`를 이용한 프로그래밍도 단점이 있다. 개발자들은 `JSP`를 이용해 데이터베이스에서 접근하였고 `Sevlet`역할도 하였다. 따라서 요청 처리, 데이터 유효성 검사, 비즈니스 로직 처리 및 응답 등 요청에 대한 모든 책임을 `JSP`에서 처리하였다. 이것은 프레젠테이션 로직과 비즈니스 로직를 분리하지 못하는 또 다른 문제점이었다.
+하지만 `JSP`를 이용한 프로그래밍도 단점이 있다. 개발자들은 `JSP`를 이용해 데이터베이스에서 접근하였고 `Sevlet`역할도 하였다. 따라서 요청 처리, 데이터 유효성 검사, 비즈니스 로직 처리 및 응답 등 요청에 대한 모든 책임을 `JSP`에서 처리하였다. 즉, 프레젠테이션 로직과 비즈니스 로직를 분리하지 못하였다.
 
 ## MVC
 프레젠테이션 로직과 비즈니스 로직을 분리하기 위해 Trygve Reenskaug가 `MVC` 패턴을 발명하였다.
@@ -39,7 +50,7 @@
 따라서
 - `Sevlet`이 `Controller`역할을 하여 프레젠테이션 로직과 비즈니스 로직 사이의 상호동작을 관리한다.
 - 기존에 `JSP`에 쓰였던 프레젠테이션 로직을 `View`에 기술하여 인터페이스 요소를 나타내고
-- 데이터베이스에 접근하기 위해 `Bean`과 `POJO 클래스`를 작성해 `Model`역할을 한다.
+- 데이터베이스에 접근하기 위해 `Bean`을 작성해 `Model`역할을 한다.
 
 이렇게 로직을 분리해 대규모 프로그램을 개발하고 유지보수하기에 수월해졌다.
 
