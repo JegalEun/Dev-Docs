@@ -26,6 +26,7 @@ TCP는 OSI 7계층 중 전송 계층에서 사용하는 프로콜로서, 장치�
 
 여기서 SYN는 시퀀스 번호를 보내는데, 난수의 숫자를 생성해 보낸다고 한다. 왜 순차적인 번호가 아닌 난수일까?
 
+연결을 맺을 때 사용하는 포트(port)는 유한 범위 내에서 사용하고 시간이 지남에 따라 재사용된다. 따라서 두 통신 호스트가 과거에 사용된 포트 번호 쌍을 사용하는 가능성이 존재한다. 서버 측에서는 SYN을 보고 패킷을 구분하는데 순차적인 번호가 전송된다면 이전의 connection으로부터 오는 패킷으로 인식할 가능성이 높다. 이러한 가능성을 줄이기 위해 난수로 시퀀스 번호를 설정하는 것이다.
 
 ## TCP의 연결설정 및 해제 과정
 TCP 통신을 이용하여 데이터를 전송하기 위해서는 네트워크 연결을 설정하는 과정이 필수적이다. 네트워크 연결을 하기위해서 TCP는 `3-way handShaking`이라는 과정을 거친다.
@@ -110,4 +111,5 @@ TCP 연결을 하였다면 연결해지하기 위해 `4-way handshaking`이라�
 ----
 #### Reference
 - [3-way handshaking & 4-way handshaking](https://k39335.tistory.com/21?category=653558)
-- [why not just 2-way](https://networkengineering.stackexchange.com/questions/24068/why-do-we-need-a-3-way-handshake-why-not-just-2-way)
+- [why not just 2-way?](https://networkengineering.stackexchange.com/questions/24068/why-do-we-need-a-3-way-handshake-why-not-just-2-way)
+- [why randominzed sequence number?](https://asfirstalways.tistory.com/356)
