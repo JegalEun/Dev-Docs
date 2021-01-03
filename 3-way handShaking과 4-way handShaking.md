@@ -20,10 +20,10 @@ TCP는 OSI 7계층 중 **전송 계층**에서 사용하는 프로콜로서, 장
 > [출처 afteracademy](https://afteracademy.com/blog/what-is-a-tcp-3-way-handshake-process)
 
 헤더는 3-way handshaking을 설명하기 위한 일부만 하고 나머지 요소는 @sNyung님의 [TCP와 UDP](https://github.com/im-d-team/Dev-Docs/blob/master/Network/TCP%20%26%20UDP.md) 글을 참고 바람!
--  SYN(Synchronization) : 연결요청, 세션을 설정하는 데 사용되며 시퀀스 번호를 보냄
--  ACK(Acknowledgemnet) : 보낸 시퀀스 번호에 TCP 계층에서의 길이 또는 양을 더한 것과 같은 값을 ACK에 포함하여 전송
+-  SYN : Synchronize sequence numbers의 약자로, 연결요청하고 세션을 설정하는 데 사용된다.
+-  ACK : Acknowledgment의 약자로, 신뢰성을 보장한다.
 
-여기서 SYN는 시퀀스 번호를 보내는데, 난수의 숫자를 생성해 보낸다고 한다. 왜 순차적인 번호가 아닌 난수일까?
+여기서 시퀀스 번호를 보내는데, 처음에 시퀀스 번호를 ISN(Initial Sequence Number)이라고 한다. ISN은 난수의 숫자를 생성해 보낸다고 한다. 왜 순차적인 번호가 아닌 난수일까?
 
 연결을 맺을 때 사용하는 포트(port)는 유한 범위 내에서 사용하고 시간이 지남에 따라 재사용된다. 따라서 두 통신 호스트가 과거에 사용된 포트 번호 쌍을 사용하는 가능성이 존재한다. 서버 측에서는 SYN을 보고 패킷을 구분하는데 순차적인 번호가 전송된다면 이전의 connection으로부터 오는 패킷으로 인식할 가능성이 크다. 이러한 가능성을 줄이기 위해 난수로 시퀀스 번호를 설정하는 것이다.
 
