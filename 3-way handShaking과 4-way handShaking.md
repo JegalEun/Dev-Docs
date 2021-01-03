@@ -80,7 +80,7 @@ TCP 연결을 하였다면 연결 해지하기 위해 `4-way handshaking`이라�
 
 ![4-way handshaking](https://user-images.githubusercontent.com/43868540/103454298-f84f3000-4d25-11eb-8e39-6771a1cecd1a.png)
 
-> [출처](https://hongpossible.tistory.com/entry/TCP-UDP-34-Way-HandShaking)
+> [출처 hongpossible.tistory](https://hongpossible.tistory.com/entry/TCP-UDP-34-Way-HandShaking)
 
 1. 클라이언트가 연결을 종료하겠다는 메시지를 전송한다 (FIN)
 2. 서버는 클라이언트의 메시지를 받고 확인 메시지를 전송하고 통신이 종료될 때까지 기다린다. (ACK)
