@@ -15,3 +15,4 @@ L4 스위치는 IP+Port(Session or Connection)를 보고 스위칭을 하는 것
 
 ## 스위치의 특징
 
+https://startingpitcher.tistory.com/8
