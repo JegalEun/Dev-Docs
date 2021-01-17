@@ -73,4 +73,4 @@ L4 스위치는 TCP와 UDP의 헤더를 보고 포트를 분별해 적절한 서
 ----
 #### Reference
 - [스위치와 L2,L3,L4](https://startingpitcher.tistory.com/8)
-- [L1,2,3,4,7]ttps://nhj12311.tistory.com/75)
+- [L1,2,3,4,7](ttps://nhj12311.tistory.com/75)
