@@ -70,7 +70,7 @@ L2 스위치는 MAC 정보(MAC Table)를 보고 스위칭을 하는 것이고,(�
 
 L3 스위치는 IP 정보(Routing Table)를 보고 스위칭을 하는 것이고,(라우팅 기능이 추가됨)
 
-L4 스위치는 IP+Port(Session or Connection)를 보고 스위칭을 하는 것이며,(로드밸런싱을 위해 사용됨) 
+L4 스위치는 IP+Port(Session or Connection)를 보고 스위칭을 하는 것이다. (로드밸런싱을 위해 사용됨) 
 
 ----
 #### Reference
