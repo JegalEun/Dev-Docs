@@ -34,6 +34,9 @@
 
 ### 5️⃣ Algorithm
 
-### 6️⃣ Design Pattern
+### 6️⃣ Data Structure
+- [스택](https://github.com/JegalEun/Dev-Docs/blob/master/Dev-Docs/Data_structure/Stack.md)
+- 
+### 7️⃣ Design Pattern
 - [JSP model](https://github.com/JegalEun/Dev-Docs/blob/master/Dev-Docs/Design_Pattern/JSP%20model.md)
 - [MVC1와 MVC2](https://github.com/JegalEun/Dev-Docs/blob/master/Dev-Docs/Design_Pattern/MVC1%20vs%20MVC2.md)
