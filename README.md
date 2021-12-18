@@ -34,6 +34,7 @@
 - [Ajax](https://github.com/JegalEun/Dev-Docs/blob/master/Dev-Docs/Language/JavaScript/ajax.md)
 
 ### 5️⃣ Algorithm
+- [유클리드 호제법](https://github.com/JegalEun/Dev-Docs/blob/master/Dev-Docs/Algorithm/유클리드%20호제법%20(Euclidean-Algorithm).md)
 
 ### 6️⃣ Data Structure
 - [스택](https://github.com/JegalEun/Dev-Docs/blob/master/Dev-Docs/Data_structure/Stack.md)
