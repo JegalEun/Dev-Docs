@@ -35,6 +35,7 @@
 
 ### 5️⃣ Algorithm
 - [유클리드 호제법](https://github.com/JegalEun/Dev-Docs/blob/master/Dev-Docs/Algorithm/유클리드%20호제법%20(Euclidean-Algorithm).md)
+- [에라토스테스의 체](https://github.com/JegalEun/Dev-Docs/blob/master/Dev-Docs/Algorithm/에라토스테네스의%20체.md)
 
 ### 6️⃣ Data Structure
 - [스택](https://github.com/JegalEun/Dev-Docs/blob/master/Dev-Docs/Data_structure/Stack.md)
