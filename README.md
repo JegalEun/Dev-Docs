@@ -19,6 +19,7 @@
 
 ### 3️⃣ Operating System
 - [프로세스와 스레드](https://github.com/JegalEun/Dev-Docs/blob/master/Dev-Docs/Operating_System/프로세스와%20스레드.md)
+- [스케줄러](https://github.com/JegalEun/Dev-Docs/blob/master/Dev-Docs/Operating_System/스케줄러의%20종류.md)
 
 ### 4️⃣ Language
 
