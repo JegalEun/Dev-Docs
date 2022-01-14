@@ -38,6 +38,7 @@
 - [유클리드 호제법](https://github.com/JegalEun/Dev-Docs/blob/master/Dev-Docs/Algorithm/유클리드%20호제법%20(Euclidean-Algorithm).md)
 - [에라토스테스의 체](https://github.com/JegalEun/Dev-Docs/blob/master/Dev-Docs/Algorithm/에라토스테네스의%20체.md)
 - [백트래킹](https://github.com/JegalEun/Dev-Docs/blob/master/Dev-Docs/Algorithm/백트래킹(Backtracking).md)
+- [DFS와 BFS](https://github.com/JegalEun/Dev-Docs/blob/master/Dev-Docs/Algorithm/DFS와%20BFS.md)
 
 ### 6️⃣ Data Structure
 - [스택](https://github.com/JegalEun/Dev-Docs/blob/master/Dev-Docs/Data_structure/Stack.md)
