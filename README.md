@@ -43,7 +43,7 @@
 ### 6️⃣ Data Structure
 - [스택](https://github.com/JegalEun/Dev-Docs/blob/master/Dev-Docs/Data_structure/Stack.md)
 - [큐](https://github.com/JegalEun/Dev-Docs/blob/master/Dev-Docs/Data_structure/Queue.md)
-- [인접행렬과 인접리스트](https://github.com/JegalEun/Dev-Docs/blob/master/Dev-Docs/Algorithm/인접행렬과%20인접리스트.md)
+- [인접행렬과 인접리스트](https://github.com/JegalEun/Dev-Docs/blob/master/Dev-Docs/Data_structure/인접행렬과%20인접리스트.md)
 
 ### 7️⃣ Design Pattern
 - [JSP model](https://github.com/JegalEun/Dev-Docs/blob/master/Dev-Docs/Design_Pattern/JSP%20model.md)
