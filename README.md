@@ -8,6 +8,7 @@
 
 ### 1️⃣ Database
 - [데이터베이스 사용 이유](https://github.com/JegalEun/Dev-Docs/blob/master/Dev-Docs/Database/데이터베이스%20사용%20이유.md)
+- [정규화](https://github.com/JegalEun/Dev-Docs/blob/master/Dev-Docs/Database/정규화%20(Normalization).md)
 
 ### 2️⃣ Network
 - [3-way handShaking와 4-way handShaking](https://github.com/JegalEun/Dev-Docs/blob/master/Dev-Docs/Network/3-way%20handShaking%20%26%204-way%20handShaking.md)
