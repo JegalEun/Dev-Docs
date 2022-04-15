@@ -50,3 +50,4 @@
 ### 7️⃣ Design Pattern
 - [JSP model](https://github.com/JegalEun/Dev-Docs/blob/master/Dev-Docs/Design_Pattern/JSP%20model.md)
 - [MVC1와 MVC2](https://github.com/JegalEun/Dev-Docs/blob/master/Dev-Docs/Design_Pattern/MVC1%20vs%20MVC2.md)
+- [싱글톤 (Singleton)](https://github.com/JegalEun/Dev-Docs/blob/master/Dev-Docs/Design_Pattern/Singleton.md)
